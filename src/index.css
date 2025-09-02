@@ -1,0 +1,116 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+body{
+   background-color:bisque;
+}
+.container{
+  max-width: 400px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container h2{
+  text-align: center;
+}
+.expenseitem{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  position: relative;
+}
+.expenseitem.positive{
+  border-right: 4px solid green;
+}
+.expenseitem.negative{
+  border-right: 4px solid red;
+}
+.expenseitem.positive .amount{
+  color: green;
+}
+.expenseitem.negative .amount{
+  color: red;
+}
+.expenseform{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.expenseform h2{
+  margin-top: 0;
+  margin-bottom: 10pxs;
+}
+.expenseform input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.expenseform button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color:#8c3bd8;
+  border: none;
+  border-radius: 5px;
+}
+.balancecontainer{
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color:#8c3bd8;
+
+}
+.currencyitem{
+  padding: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30%;
+  box-sizing: border-boxs;
+   background-color:#9550d4;
+
+}
+.currencyitem .title{
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+.currencyitem .amount{
+  text-align: center;
+}
+.amount.green{
+  color: green;
+}
+.amount.red{
+  color: red;
+}
+
+.btncontainer{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffffa3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 5px;
+}
+.expenseitem:hover .btncontainer{
+  opacity: 1;
+}
